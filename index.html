@@ -30,27 +30,58 @@
             width: 100%;
         }
 
-        .contact {
-            margin-top: 20px;
+        .section {
+            margin: 40px 0;
         }
 
         .contact a {
             color: #00a0e4; /* Kolor linków */
             text-decoration: none;
         }
+
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        nav a {
+            color: #00a0e4; /* Kolor linków w menu */
+            text-decoration: none;
+            margin: 10px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Showdown Radio</h1>
-        <p>Radio internetowe relacjonujące rozgrywki w Showdown - sport dla niewidomych.</p>
 
-        <audio id="audio-player" controls>
-            <source src="link_do_twojego_strumienia_audio.mp3" type="audio/mpeg">
-            Przeglądarka nie obsługuje odtwarzacza audio.
-        </audio>
+        <nav>
+            <a href="#about">O nas</a>
+            <a href="#technology">Technologia</a>
+            <a href="#how-to-listen">Jak słuchać?</a>
+            <a href="#contact">Kontakt</a>
+        </nav>
+        
+        <div class="section" id="about">
+            <h2>O nas</h2>
+            <p>Radio internetowe relacjonujące rozgrywki w Showdown - sport dla niewidomych.</p>
+        </div>
 
-        <div class="contact">
+        <div class="section" id="technology">
+            <h2>Technologia</h2>
+            <p>Wykorzystujemy najnowocześniejsze rozwiązania technologiczne, aby zapewnić najlepszą jakość relacji ze światem Showdown.</p>
+        </div>
+
+        <div class="section" id="how-to-listen">
+            <h2>Jak słuchać?</h2>
+            <audio id="audio-player" controls>
+                <source src="link_do_twojego_strumienia_audio.mp3" type="audio/mpeg">
+                Przeglądarka nie obsługuje odtwarzacza audio.
+            </audio>
+        </div>
+
+        <div class="section" id="contact">
+            <h2>Kontakt</h2>
             <p>Skontaktuj się z nami: <a href="mailto:info@showdownradio.com">info@showdownradio.com</a></p>
         </div>
     </div>
